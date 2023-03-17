@@ -72,4 +72,18 @@ df1_3 = pd.DataFrame({
     index=list(range(8, 12))
 )
 
-print(df1_1)
+"""
+# Juntando os DFs
+merged = pd.concat([df1_1, df1_2, df1_3])
+print(merged)
+print("========")
+grupo = pd.concat([df1_1, df1_2, df1_3], keys=["f1", "f2", "f3"])
+print(grupo)
+print("============")
+print(grupo['A'])
+
+"""
+
+g2 = df1_1.append(df1_2).append(df1_3)  # Evitar usar, pois, será removido em breve
+
+print(g2)
