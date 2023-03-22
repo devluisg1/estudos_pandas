@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 
 """v = list((22, 55, 7, 9))
 print(v)
