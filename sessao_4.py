@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from sessao_6 import df_aula2
 
 # Merge de dados  Sintaxe 1-5
 
@@ -87,3 +88,7 @@ print("===" * 20)
 
 both_group = df.groupby(['A', 'B']).sum(True)
 print(both_group)
+
+
+
+print(df_aula2.groupby(['Pessoa']).sum(True))
