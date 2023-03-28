@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-
 """
 Solarize_Light2
 _classic_test_patch
@@ -33,27 +32,14 @@ seaborn-v0_8-whitegrid
 tableau-colorblind10
 """
 
-#  Estilos de plotagens com Pandas - Linha
-# for x in plt.style.available:
-#    print(x)
+# Dados em gráficos - Histogramas
+# pd.set_option('display.max_columns', None)
+# pd.reset_option("^display")
 
-# plt.style.use()
-
-# plt.rcParams['figure.figsize'] = (25, 7)
 df_titanic = pd.read_csv(r'Repository/titanic_train.csv')
-# print(df_titanic)
-# print(df_titanic.shape)
+plt.rcParams['figure.figsize'] = (15, 7)
 
-# print(df_titanic.query('Age >= 32 and Age <= 45'))
-
-plt.plot(df_titanic.Age, '*-g')
-
-# Dados em gráficos — Linhas
-plt.title("Passageiros / Idade Titanic")
-plt.xlabel("Passageiro", size=14)
-plt.ylabel("Idade", size=14)
+print(df_titanic)
+df_titanic.Age.hist()
 plt.show()
 
-# df_titanic.Age.plot()
-df_titanic.plot()
-plt.show()
