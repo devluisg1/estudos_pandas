@@ -82,7 +82,7 @@ df4_1 = pd.DataFrame({
     'Col2': [2, 1, 9, 8, 7, 4],
     'Col3': [0, 1, 9, 4, 2, 3]
 })
-print(df4_1)
+"""print(df4_1)
 print('==' * 20)
 print(df4_1.sort_values(by='Col1'))
 print('==' * 20)
@@ -93,3 +93,4 @@ print('==' * 20)
 print(df4_1.sort_values(by='Col2', ascending=False))
 print('==' * 20)
 print(df4_1.sort_values(by='Col2', axis=0, ascending=False))
+"""
